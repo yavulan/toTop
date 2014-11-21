@@ -70,3 +70,30 @@ toTop.initialize({
         scrollSpeed: 'slow'
     });
 ```
+
+## With [RequireJS](https://github.com/jrburke/requirejs)
+
+* Set the path to `toTop.js` file:
+```JavaScript
+paths: {
+        toTop: 'some/path/toTop'
+    }
+```
+
+* Config the shim:
+
+```JavaScript
+shim: {
+        toTop:{
+            exports:'toTop'
+        }
+    }
+```
+
+* Initialize script:
+
+```JavaScript
+requirejs(['toTop'], function(toTop){
+    toTop.initialize();
+});
+```
