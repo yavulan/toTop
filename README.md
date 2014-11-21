@@ -63,11 +63,11 @@ toTop.initialize({
     });
 ```
 
-Set animation to be slow:
+Set animation to be fast:
 
 ```JavaScript
 toTop.initialize({
-        scrollSpeed: 'slow'
+        scrollSpeed: 'fast'
     });
 ```
 
