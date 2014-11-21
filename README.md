@@ -34,23 +34,23 @@ toTop.initialize({
 
 ## Available options
 
-| Option name | Default value  | Explanation |
-| ------- |------------| ------------|
-| id     | `'scroll-to-top'` | Id of created toTop div |
-| up    | `'▲'`       |   Text for up button state |
-| down | `'▼'`        |    Text for down button state  |
-| scrollSpeed | `120`        |  It's inverted value, so the more it is, the slowest is animation. There also available: `'slow'` and `'fast'` |
+| Option name | Default value  | Type | Explanation |
+| ------- |------------|-------|------------|
+| id     | `'scroll-to-top'` |String| Id of created toTop div |
+| up    | `'▲'`       |String|   Text for up button state |
+| down | `'▼'`        |String|    Text for down button state  |
+| scrollSpeed | `120`        |Integer or String|  It's inverted value, so the more it is, the slowest is animation. There also available: `'slow'` and `'fast'` |
 | **Css styles:**      |
-| bottom | `'20px'`        |    |
-| right | `'20px'`        |    |
-| left | `null`       |    |
-| width | `'48px'`        |    |
-| height | `'48px'`      |     |
-| color | `'#fff'`       |    |
-| background | `'rgba(129,129,129,.3)'`        |    |
-| hoverBackground | `'rgba(129,129,129,.8)'`        |    |
-| br             | `'4px'`      |   Value of border-radius |
-| transition | `'all .2s ease 0'`       |    |
+| bottom | `'20px'`        |String|    |
+| right | `'20px'`        |String|    |
+| left | `null`       |String|    |
+| width | `'48px'`        |String|    |
+| height | `'48px'`      |String|     |
+| color | `'#fff'`       |String|    |
+| background | `'rgba(129,129,129,.3)'`        |String|    |
+| hoverBackground | `'rgba(129,129,129,.8)'`        |String|    |
+| br             | `'4px'`      |String|   Value of border-radius |
+| transition | `'all .2s ease 0'`       |String|    |
 
 
 ## Examples
