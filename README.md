@@ -1,6 +1,6 @@
 # toTop.js
 
-**toTop.js** is easy to install script for scrolling html page to top and back to previous reading point by clicking a button. Works without JQuery.
+**toTop.js** is easy to install script for scrolling html page to top and back to previous reading point by clicking a button. Works without jQuery.
 
 ## Install
 There are a few different ways you can install toTop:
