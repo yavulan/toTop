@@ -50,6 +50,7 @@ toTop.initialize({
 | background | `'rgba(129,129,129,.3)'`        |String|    |
 | hoverBackground | `'rgba(129,129,129,.8)'`        |String|    |
 | br             | `'4px'`      |String|   Value of border-radius |
+| z             | `'9999999'`      |String|   Value of z-index |
 | transition | `'all .2s ease 0'`       |String|    |
 
 
