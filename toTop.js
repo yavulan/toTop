@@ -21,7 +21,8 @@
         background: 'rgba(129,129,129,.3)',
         hoverBackground: 'rgba(129,129,129,.8)',
         br: '4px', // br is shortcut for border-radius
-        transition: 'all .2s ease 0'
+        transition: 'all .2s ease 0',
+        z: '9999999' // z is shortcut for z-index
     };
 
     // Get working Object.keys in IE
@@ -118,6 +119,7 @@
             + 'color: '+opts.color+';'
             + 'background: '+opts.background+';'
             + 'border-radius: '+opts.br+';'
+            + 'z-index: '+opts.z+';'
 
             + '-webkit-transition:'+opts.transition+';'
             + '-moz-transition: '+opts.transition+';'
