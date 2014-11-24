@@ -39,7 +39,7 @@ toTop.initialize({
 | id     | `'scroll-to-top'` |String| Id of created toTop div |
 | up    | `'▲'`       |String|   Text for up button state |
 | down | `'▼'`        |String|    Text for down button state  |
-| scrollSpeed | `120`        |Integer or String|  It's inverted value, so the more it is, the slowest is animation. There also available: `'slow'` and `'fast'` |
+| speed | `3`        |Integer or String|  Optimal range is between 1 and 10. There also available: `'slow'` and `'fast'` |
 | **Css styles:**      |
 | bottom | `'20px'`        |String|    |
 | right | `'20px'`        |String|    |
