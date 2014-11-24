@@ -68,7 +68,7 @@ Set animation to be fast:
 
 ```JavaScript
 toTop.initialize({
-        scrollSpeed: 'fast'
+        speed: 'fast'
     });
 ```
 
