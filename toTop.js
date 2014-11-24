@@ -10,7 +10,7 @@
         id: 'scroll-to-top',
         up: '▲',
         down: '▼',
-        scrollSpeed: 120,
+        speed: 3, // optimal range 1-10
         // css styles
         bottom: '20px',
         right: '20px',
@@ -22,7 +22,7 @@
         hoverBackground: 'rgba(129,129,129,.8)',
         br: '4px', // br is shortcut for border-radius
         transition: 'all .2s ease 0',
-        z: '9999999' // z is shortcut for z-index
+        z: '9999999', // z is shortcut for z-index
     };
 
     // Get working Object.keys in IE
@@ -71,7 +71,7 @@
     function ScrollTo(element, to, duration) {
         if (duration < 0) return;
         var difference = to - element.scrollTop;
-        var perTick = difference / duration * 10;
+        var perTick = difference / duration*10;
 
         setTimeout(function () {
             element.scrollTop = element.scrollTop + perTick;
@@ -147,32 +147,33 @@
         var tempXY = 0;
         var clicked = false;
 
-        if(typeof opts.scrollSpeed == 'string'){
-            opts.scrollSpeed = opts.scrollSpeed.toLowerCase().trim();
+        if(typeof opts.speed == 'string'){
+            opts.speed = opts.speed.toLowerCase().trim();
 
-            switch (opts.scrollSpeed) {
+            switch (opts.speed) {
                 case 'slow':
-                    opts.scrollSpeed = 180;
+                    opts.speed = 1;
                     break;
                 case 'fast':
-                    opts.scrollSpeed = 50;
+                    opts.speed = 6;
                     break;
                 default :
-                    opts.scrollSpeed = 120;
+                    opts.speed = 3;
             }
         }
 
+        var duration = 600/opts.speed*0.75;
 
         totopDiv.onclick = function () {
             if (clicked) {
                 clicked = false;
-                ScrollTo(document.documentElement, tempXY, opts.scrollSpeed);
+                ScrollTo(document.documentElement, tempXY, duration);
                 totopDiv.innerHTML = opts.up;
             }
             else {
                 clicked = true;
                 tempXY = document.documentElement.scrollTop;
-                ScrollTo(document.documentElement, 0, opts.scrollSpeed);
+                ScrollTo(document.documentElement, 0, duration);
                 totopDiv.innerHTML = opts.down;
             }
         };
